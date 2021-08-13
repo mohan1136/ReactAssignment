@@ -19,9 +19,9 @@ export default function Pagination(props) {
               }
               key={page}
             >
-              <a className="page-link" onClick={() => props.onPageChange(page)}>
+              <p className="page-link" onClick={() => props.onPageChange(page)}>
                 {page}
-              </a>
+              </p>
             </li>
           );
         })}
