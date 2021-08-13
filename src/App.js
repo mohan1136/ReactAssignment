@@ -44,7 +44,7 @@ function App() {
   }, []);
 
   const handlePageChange = (page) => {
-    setPageSize(page);
+    setCurrentPage(page);
   }
   let handlePost = (c) => {
     let result = episodes.filter(ep => ep.characters.includes(c.name)).map(ep => ep.season.trim());
