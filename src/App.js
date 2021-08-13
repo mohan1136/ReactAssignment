@@ -8,6 +8,7 @@ function App() {
   const [characters, setCharacters] = useState([]);
   const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
+  console.log(setPageSize);
   const [isList, setIsList] = useState(true);
   const [postData, setPostData] = useState(0);
   const [seasons, setSeasons] = useState("");
