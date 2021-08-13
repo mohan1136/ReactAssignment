@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import paginator from './components/paginator';
 function App() {
   const [characters, setCharacters] = useState([]);
-//   const [pageSize, setPageSize] = useState(10);
+  const [pageSize, setPageSize] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
   const [isList, setIsList] = useState(true);
   const [postData, setPostData] = useState(0);
@@ -43,7 +43,7 @@ function App() {
   }, []);
 
   const handlePageChange = (page) => {
-    setCurrentPage(page);
+    setPageSize(page);
   }
   let handlePost = (c) => {
     let result = episodes.filter(ep => ep.characters.includes(c.name)).map(ep => ep.season.trim());
