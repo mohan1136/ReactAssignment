@@ -115,7 +115,7 @@ function App() {
               <div className="post">
                 <div className="name-image">
                   <h1>{postData.name}</h1>
-                  <img src={postData.img}></img>
+                  <img alt="images" src={postData.img}></img>
                 </div>
                 <table>
                   <thead>
