@@ -59,6 +59,7 @@ function App() {
     setIsList(true);
   }
   let handleCategory = (cat) => {
+    setCurrentPage(1);
     setReqCategory(cat);
     let result;
     if (cat === "All") {
